@@ -6,6 +6,19 @@
 
 /** @type {import("next").NextConfig} */
 const config = {
+  env: {
+    ACCESS_TOKEN: "",
+  },
+
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "www.superherodb.com",
+      },
+    ],
+  },
+
   reactStrictMode: true,
 
   // Set default page from '/' to '/search'
